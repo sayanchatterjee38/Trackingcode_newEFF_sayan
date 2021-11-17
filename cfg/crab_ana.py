@@ -9,13 +9,13 @@ if __name__ == '__main__':
     from CRABClient.UserUtilities import config
     config = config()
 
-    config.General.requestName ='PbPb2018_ptetacent_weight_Oct06_2021_Negtrk'
-    config.General.workArea ='PbPb2018_ptetacent_weight_Oct06_2021_Negtrk'
+    config.General.requestName ='PbPb2018_thnsparse4dsumw2_phibinwidth0p1_Nov14_2021_Negtrk'
+    config.General.workArea ='PbPb2018_thnsparse4dsumw2_phibinwidth0p1_Nov14_2021_Negtrk'
     config.General.transferOutputs = True
     config.General.transferLogs = False
     
     config.JobType.allowUndistributedCMSSW = True
-    config.JobType.psetName = 'run_PbPb_cfg.py'
+    config.JobType.psetName = 'run_PbPb_newcfg.py'
     config.JobType.pluginName = 'Analysis'
     
     
@@ -27,9 +27,10 @@ if __name__ == '__main__':
     config.Data.totalUnits = -1
     config.Data.outLFNDirBase = '/store/user/sayan/' 
     config.Data.publication = False
-    config.Data.outputDatasetTag = 'PbPb2018_ptetacent_weight_Oct06_2021_Negtrk'
+    config.Data.outputDatasetTag = 'PbPb2018_thnsparse4dsumw2_phibinwidth0p1_Nov14_2021_Negtrk'
     
-    config.Site.storageSite = 'T2_IN_TIFR'
+    #config.Site.storageSite = 'T2_IN_TIFR'
+    config.Site.storageSite = 'T3_CH_CERNBOX'
     
 
     def submit(config):
